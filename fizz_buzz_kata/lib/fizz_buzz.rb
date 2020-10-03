@@ -2,8 +2,10 @@ class FizzBuzz
     def fizz_buzz(num)
         if num == 1
             "1"
-        else
+        elsif num == 2
             "2"
+        else
+            "4"
         end
     end
 end
