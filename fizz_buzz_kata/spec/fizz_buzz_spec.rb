@@ -90,5 +90,15 @@ describe 'FizzBuzz' do
             expect(fizz.fizz_buzz(30)).to eq("fizzbuzz")
         end
     end
+
+    context 'when I fizz buzz a number that is greater than 100' do
+        it 'returns an error' do
+            # Arrange
+            fizz = FizzBuzz.new
+
+            # Assert
+            expect(fizz.fizz_buzz(105)).to eq("fizzbuzz")
+        end
+    end
 end
 
