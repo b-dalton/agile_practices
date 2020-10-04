@@ -30,5 +30,15 @@ describe 'FizzBuzz' do
             expect(fizz.fizz_buzz(4)).to eq("4")
         end
     end
+
+    context 'when I fizz buzz number 3' do
+        it 'returns the string "fizz"' do
+            # Arrange
+            fizz = FizzBuzz.new
+
+            # Assert
+            expect(fizz.fizz_buzz(3)).to eq("fizz")
+        end
+    end
 end
 
