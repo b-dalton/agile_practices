@@ -61,13 +61,23 @@ describe 'FizzBuzz' do
         end
     end
 
-    context 'when I fizz buzz another number that is a multiple of 5' do
+    context 'when I fizz buzz a number that is a multiple of 5' do
         it 'returns the string "fizz"' do
             # Arrange
             fizz = FizzBuzz.new
 
             # Assert
             expect(fizz.fizz_buzz(10)).to eq("buzz")
+        end
+    end
+
+    context 'when I fizz buzz a number that is a multiple of 3 and 5' do
+        it 'returns the string "fizzbuzz"' do
+            # Arrange
+            fizz = FizzBuzz.new
+
+            # Assert
+            expect(fizz.fizz_buzz(15)).to eq("fizzbuzz")
         end
     end
 end
