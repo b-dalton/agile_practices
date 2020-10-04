@@ -1,5 +1,9 @@
 class FizzBuzz
     def fizz_buzz(num)
-        num.to_s
+        if num == 3
+            "fizz"
+        else
+            num.to_s
+        end
     end
 end
